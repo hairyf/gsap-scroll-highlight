@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gsap Scroll Highlight</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: black;
+    }
+
+    .block {
+      height: 100vh;
+    }
+
+    .text {
+      opacity: .45;
+      color: #fff;
+      font-size: 64px;
+      transition: opacity 0.8s;
+    }
+    .text.active {
+      opacity: 1;
+    }
+
+    main {
+      margin: 0 max(12vw, 10px);
+      padding: 0 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block"></div>
+  <main>
+    <span class="text">这个常伴你左右的好伙伴，超有能耐。</span>
+    <span class="text">体温感应功能，帮女性洞察自身的健康；</span>
+    <span class="text">车祸检测待命，紧急时刻主动呼叫救援；</span>
+    <span class="text">睡眠阶段跟测，让你更了解自己的睡眠</span>
+    <span class="text">还有进阶的体能训练 app，为锻炼加分。</span>
+    <span class="text">就让一个更健康的未来，更漂亮地开始吧。</span>
+  </main>
+  <div class="block"></div>
+
+  <script type="module" src="./src/index.ts">
+
+  </script>
+</body>
+
+
+</html>
